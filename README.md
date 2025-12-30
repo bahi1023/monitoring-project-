@@ -64,15 +64,13 @@ ansible-prometheus-grafana-monitoring/
 
 │   └── hosts.ini
 
-├── roles/
-
 │   ├── prometheus/
 
 │   ├── grafana/
 
 │   └── node_exporter/
 
-├── site.yml
+├── deploy_central_stack.yml
 
 └── README.md
 ---
