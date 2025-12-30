@@ -75,7 +75,7 @@ ansible-prometheus-grafana-monitoring/
 └── README.md
 ---
 ![Ansible Playbook Result](https://github.com/bahi1023/monitoring-project-/blob/d8a1966d0ef121fcf4d6c85ac6453a44c9c51009/Screenshot%202025-12-30%20232457.png)
-![Ansible Playbook Result]()
+![Ansible Playbook Result](https://github.com/bahi1023/monitoring-project-/blob/49c4f69535da1d65ebec2629c619fbd1a912b01a/Screenshot%202025-12-30%20232538.png)
 
 
 
