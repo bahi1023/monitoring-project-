@@ -77,7 +77,4 @@ ansible-prometheus-grafana-monitoring/
 └── README.md
 ---
 
-<img width="1920" height="1080" alt="Screenshot (316)" src="https://github.com/user-attachments/assets/ffbb98c5-3237-41e7-a51d-2cbe84cbc129" />
-<img width="1920" height="1080" alt="Screenshot (315)" src="https://github.com/user-attachments/assets/be310124-d0aa-4330-bedc-e7c9f3824bc2" />
-<img width="1920" height="1080" alt="Screenshot (314)" src="https://github.com/user-attachments/assets/fe7624ea-76dc-4671-9d03-405e6f6b83fa" />
 
