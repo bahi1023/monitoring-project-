@@ -1,0 +1,19 @@
+- name: Deploy Node Exporter to all nodes
+  hosts: monitored_nodes
+  become: true
+  tasks:
+    - name: Run Node Exporter with host networking
+      containers.podman.podman_container:
+        name: node-exporter
+        image: quay.io/prometheus/node-exporter:latest
+        state: started
+        restart_policy: always
+        network: host
+        command:
+          - "--path.procfs=/host/proc"
+          - "--path.sysfs=/host/sys"
+          - "--path.rootfs=/rootfs"
+        volume:
+          - "/proc:/host/proc:ro"
+          - "/sys:/host/sys:ro"
+          - "/:/rootfs:ro"
