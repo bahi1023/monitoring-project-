@@ -1,0 +1,7 @@
+sudo dnf install -y ansible-core podman
+mkdir monitoring-project && cd monitoring-project
+echo "[central_server]
+192.168.1.10
+[monitored_nodes]
+192.168.1.11
+192.168.1.12
