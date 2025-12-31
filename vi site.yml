@@ -1,0 +1,12 @@
+---
+- name: Install Centralized Monitoring Stack
+  hosts: central_server
+  become: true
+  roles:
+    - monitoring_server
+
+- name: Deploy Node Exporter to all nodes
+  hosts: monitored_nodes
+  become: true
+  roles:
+    - node_exporter
