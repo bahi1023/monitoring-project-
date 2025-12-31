@@ -70,7 +70,7 @@ ansible-prometheus-grafana-monitoring/
 
 │   └── node_exporter/
 
-├── deploy_central_stack.yml
+├── site.yml
 
 └── README.md
 ---
