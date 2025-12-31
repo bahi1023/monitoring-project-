@@ -1,11 +1,20 @@
----
+# 1. Copy the config file first
+- name: Copy Prometheus Config
+  copy:
+    src: prometheus.yml
+    dest: /root/prometheus.yml
+
+# 2. Run Prometheus with the volume mounted
 - name: Deploy Prometheus
   containers.podman.podman_container:
     name: prometheus
     image: docker.io/prom/prometheus:latest
     state: started
+    recreate: yes      # <--- Important: This forces it to restart with new config
     ports:
       - "9090:9090"
+    volumes:           # <--- This mounts the file we just copied
+      - "/root/prometheus.yml:/etc/prometheus/prometheus.yml:Z"
 
 - name: Deploy Alertmanager
   containers.podman.podman_container:
